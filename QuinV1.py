@@ -531,8 +531,7 @@ if st.button("Guardar Quiniela"):
     st.download_button(
         label="Descargar Quiniela",
         data=csv,
-#        file_name=os.path.basename(archivo_personal),
-        file_name= archivo,
+        file_name=os.path.basename(archivo_personal),
         mime="text/csv"
         )
 
