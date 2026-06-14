@@ -504,13 +504,15 @@ if st.button("Guardar Quiniela"):
         semana_seleccionada
     )
 
-    df.to_csv(
-        archivo,
-        mode='a', 
-        header=False,
-        index=False,
-        encoding="utf-8-sig"
-    )
+#    df.to_csv(
+#        archivo,
+#        mode='a', 
+#        header=False,
+#        index=False,
+#        encoding="utf-8-sig"
+#    )
+     with open(archivo, 'a', encoding='utf-8') as f:
+        f.write(df.to_csv(index=False))
     
     st.success("Quiniela registrada correctamente.")
 
