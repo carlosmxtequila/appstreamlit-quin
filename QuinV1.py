@@ -511,8 +511,6 @@ if st.button("Guardar Quiniela"):
         index=False,
         encoding="utf-8-sig"
     )
-#CIERRE?
-    df.close()
     
     st.success("Quiniela registrada correctamente.")
 
