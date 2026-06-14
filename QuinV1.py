@@ -555,5 +555,3 @@ subtotales = df.groupby('Participante')['Resultado'].agg(lambda x: x.astype(floa
 
 st.write(subtotales)
 
-# Explicitly close the file
-file.close()
