@@ -9,7 +9,7 @@ import os
 # --------------------------------------------------
 
 st.set_page_config(
-    page_title="Quiniela Mundial FIFA 2026",
+    page_title="Quiniela TT 2026",
     page_icon="🏆",
     layout="wide"
 )
