@@ -554,3 +554,6 @@ df = pd.read_csv(archivo)
 subtotales = df.groupby('Participante')['Resultado'].agg(lambda x: x.astype(float).sum())
 
 st.write(subtotales)
+
+# Explicitly close the file
+file.close()
