@@ -511,8 +511,8 @@ if st.button("Guardar Quiniela"):
 #        index=False,
 #        encoding="utf-8-sig"
 #    )
-     with open(archivo,"a", encoding='utf-8') as f:
-         f.write(df.to_csv(index=False))
+    with open(archivo,"a", encoding='utf-8') as file:
+        file.write(df.to_csv(index=False))
     
     st.success("Quiniela registrada correctamente.")
 
